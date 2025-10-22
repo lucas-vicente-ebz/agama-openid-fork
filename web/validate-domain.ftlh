@@ -5,9 +5,6 @@
 	</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" type="text/css"></head>
 <body>
 
-
-
-
   
 	
 	
@@ -20,16 +17,12 @@
 	  <div class="md:border md:border-gray-300 bg-white md:shadow-lg shadow-none rounded p-10">
 		<div class="flex flex-col items-center space-y-3">
 		  <div class="flex">
-			<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png">
+			<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" id="ip9nr">
 		  </div>
 		  <span data-i18n="main.email_auth" class="text-2xl font-semi-bold leading-normal"></span>
 		  <p data-i18n="main.enter_email" class="leading-normal">
 		  </p>
 		</div>
-		[#if errorMessage?has_content]
-		<div id="ig86l" class="fs-6 text-red-600 mb-4" align="center">${errorMessage}
-		</div>
-		[/#if]
 		<form method="post" enctype="application/x-www-form-urlencoded" class="my-8">
 		  <input type="hidden" name="location" id="location" value="">
 		  <input type="hidden" name="device" id="device" value="">
@@ -53,9 +46,6 @@
   
   
   
-
-
-
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/2.0.22/i18next.min.js"></script><script src="./locale/loc-i18next.js"></script><script>
