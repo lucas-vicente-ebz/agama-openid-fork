@@ -17,7 +17,7 @@ When
 opSettings = conf.$providerId
 temp = {}
 //  (opcional) enviar login_hint ao IdP para pré-preencher o usuário
-When !opSettings.oauth.extraParams is __________
+When opSettings.oauth.extraParams is not ""
      opSettings.oauth.extraParams = {}
      opSettings.oauth.extraParams.login_hint = email
 //  Check if dynamic client registration is desired
