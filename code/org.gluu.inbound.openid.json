@@ -151,7 +151,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
@@ -169,7 +169,7 @@
 				},
 				"previousNodeId": "assignmentNode-b861f827-3df6-4f0c-906b-8225e0aea716",
 				"agamaData": {
-					"javaClassName": "org.ebz.tec.br.domain.EmailHandler",
+					"javaClassName": "org.ebz.tec.br.domain.emailHandler",
 					"javaMethodName": "providerFor",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
@@ -191,7 +191,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-91d591b7-70bd-44ba-b122-082847f0eae4",
@@ -370,7 +370,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "triggerNode-4c827858-6793-4691-9331-fd21a0d9bd65",
@@ -867,8 +868,8 @@
 		}
 	],
 	"viewport": {
-		"x": -275.4489521566894,
-		"y": 367.9299853907776,
-		"zoom": 0.9304496577030154
+		"x": -544,
+		"y": 35,
+		"zoom": 1
 	}
 }
