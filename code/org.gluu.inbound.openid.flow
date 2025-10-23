@@ -8,10 +8,10 @@ emailObj = { email: "", errorMessage: "" }
 //  ===== Coleta e-mail e resolve provider via Java =====
 dataEmail = RRF "form.ftlh" emailObj
 email = dataEmail.email
-providerId = Call org.ebz.tec.br.domain.emailHandler#providerFor email
+providerId = Call org.ebz.tec.br.domain.EmailHandler#providerFor email
 opSettings = conf.$providerId
 temp = {}
-When opSettings.dcr is not null and opSettings.dcr.enabled is true
+When 
      //  Perform client registration and grab config data
      temp = Call org.gluu.inbound.oauth2.DCRUtil#registerClient opSettings.host opSettings.dcr.useCachedClient opSettings.oauth.redirectUri opSettings.oauth.scopes
 //  Fill missing data in opSettings, if any, like client creds
