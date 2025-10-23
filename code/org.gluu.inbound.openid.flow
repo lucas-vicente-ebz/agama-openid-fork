@@ -10,7 +10,7 @@ dataEmail = RRF "form.ftlh" emailObj
 email = dataEmail.email
 providerId = Call org.ebz.tec.br.domain.emailHandler#providerFor email
 // mostrar provider id
-Log "@warn  o provider ID é : % " providerId
+Log "@warn  o provider ID é : % % " providerId dataEmail.email
 opSettings = conf.$providerId
 temp = {}
 When opSettings.dcr is not null and opSettings.dcr.enabled is true
