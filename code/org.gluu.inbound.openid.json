@@ -151,7 +151,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
@@ -191,7 +191,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-91d591b7-70bd-44ba-b122-082847f0eae4",
@@ -254,7 +254,20 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "opSettings.dcr",
+							"operator": "is not",
+							"dataValue": "null",
+							"combinator": "and"
+						},
+						{
+							"variable": "opSettings.dcr.enabled",
+							"operator": "is",
+							"dataValue": "true",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
@@ -267,7 +280,8 @@
 			"measured": {
 				"width": 110,
 				"height": 60
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "callNode-2b57c7cb-fd69-448d-8d94-292bc152ff4c",
@@ -311,7 +325,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "callNode-267f0927-d94c-469f-b673-ca245913b504",
@@ -852,8 +867,8 @@
 		}
 	],
 	"viewport": {
-		"x": 97.55104784331058,
-		"y": 387.9299853907776,
+		"x": -275.4489521566894,
+		"y": 367.9299853907776,
 		"zoom": 0.9304496577030154
 	}
 }
