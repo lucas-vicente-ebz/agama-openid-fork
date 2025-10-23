@@ -157,8 +157,8 @@
 			"id": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
 			"type": "callNode",
 			"position": {
-				"x": 1030,
-				"y": 40
+				"x": 728,
+				"y": 615
 			},
 			"data": {
 				"id": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
@@ -191,7 +191,8 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "assignmentNode-91d591b7-70bd-44ba-b122-082847f0eae4",
@@ -233,7 +234,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "whenNode-7228873c-7fe9-4fee-a4b6-d42bd11979de",
@@ -597,6 +599,40 @@
 				"width": 170,
 				"height": 123
 			}
+		},
+		{
+			"id": "logNode-758fe66a-f107-4087-b364-9e32ab5b07d9",
+			"type": "logNode",
+			"position": {
+				"x": 1151,
+				"y": 910
+			},
+			"data": {
+				"id": "logNode-758fe66a-f107-4087-b364-9e32ab5b07d9",
+				"type": "logNode",
+				"position": {
+					"x": 978,
+					"y": 615
+				},
+				"previousNodeId": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
+				"agamaData": {
+					"logMessage": "\" o provider ID é : % \" providerId",
+					"logLevel": "warn",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "mostrar provider id"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -865,11 +901,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-44f0e536-6868-45c1-92bb-4891ff95e123_continue"
+		},
+		{
+			"id": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9-logNode-758fe66a-f107-4087-b364-9e32ab5b07d9",
+			"type": "default",
+			"source": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
+			"target": "logNode-758fe66a-f107-4087-b364-9e32ab5b07d9",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9"
 		}
 	],
 	"viewport": {
-		"x": -544,
-		"y": 35,
+		"x": -205,
+		"y": 175,
 		"zoom": 1
 	}
 }
