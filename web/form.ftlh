@@ -25,7 +25,7 @@
 		<form method="post" class="my-8">
 		  <div class="relative mb-2">
 			<label for="username" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text">Email&nbsp;</label>
-			<input type="text" id="email" name="email" autofocus="" required="" class="w-full rounded px-3 border border-gray-300 pt-2 pb-2">
+			<input type="text" id="email" name="email" autofocus="" required="true" class="w-full rounded px-3 border border-gray-300 pt-2 pb-2">
 		  </div>
 		  <div class="space-y-9">
 			<div class="text-sm flex justify-center items-center">
