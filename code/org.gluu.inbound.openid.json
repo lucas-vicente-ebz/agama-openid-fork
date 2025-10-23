@@ -220,7 +220,20 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "providerId",
+							"operator": "is",
+							"dataValue": "\"\"",
+							"combinator": "or"
+						},
+						{
+							"variable": "providerId",
+							"operator": "is",
+							"dataValue": "null",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
