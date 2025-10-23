@@ -134,7 +134,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": false,
-							"assignmentExpression": "(dataEmail and dataEmail.email) ? dataEmail.email.trim() : \"\"",
+							"assignmentExpression": "dataEmail",
 							"assignedVariableName": "email"
 						}
 					],
@@ -150,7 +150,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "callNode-f304eb71-f870-4964-955c-f8c7ac3e68c1",
@@ -618,7 +619,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-9041864c-368d-4b52-a6ae-05aa0a6c1f59",
@@ -1114,8 +1115,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3669.640455030276,
-		"y": 789.241958609109,
+		"x": -602.6404550302755,
+		"y": 465.241958609109,
 		"zoom": 1.6517553298714398
 	}
 }
