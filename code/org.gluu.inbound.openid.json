@@ -260,8 +260,8 @@
 					"hasComment": true,
 					"comment": " feedback simples de erro; se preferir, re-renderize o form com mensagem",
 					"flowfilename": "",
-					"returnVariable": "email não encontrado ou domínio sem IdP configurado",
-					"finishMode": "withFailure",
+					"returnVariable": "it_hadlw",
+					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"previousNodeId": "whenNode-f6882f9d-4bdd-4671-a90c-2d673da97e19"
 				}
