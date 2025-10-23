@@ -20,10 +20,6 @@ temp = {}
 When opSettings.oauth.extraParams is not ""
      opSettings.oauth.extraParams = {}
      opSettings.oauth.extraParams.login_hint = email
-//  Check if dynamic client registration is desired
-When 
-     //  Perform client registration and grab config data
-     temp = Call org.gluu.inbound.oauth2.DCRUtil#registerClient opSettings.host opSettings.dcr.useCachedClient opSettings.oauth.redirectUri opSettings.oauth.scopes
 //  Fill missing data in opSettings, if any, like client creds
 opSettings.oauth = Call org.gluu.inbound.oauth2.OAuthParams#update opSettings.oauth  temp opSettings.acrValues
 //  Launch utility flow
