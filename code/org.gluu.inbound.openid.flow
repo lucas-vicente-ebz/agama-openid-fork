@@ -7,7 +7,7 @@ obj = { providers: conf }
 emailObj = { email: "", errorMessage: "" }
 //  ======== [ALTERAÇÃO]: coletar e-mail e resolver provider via Java ========
 dataEmail = RRF "form.ftlh" emailObj
-email = (dataEmail and dataEmail.email) ? dataEmail.email.trim() : ""
+email = dataEmail
 //  resolve o providerId chamando o utilitário Java
 providerId = Call org.ebz.tec.br.domain.emailHandler#getProvider email
 When 
