@@ -21,7 +21,8 @@
     "configs": {
         "org.gluu.inbound.oauth2.AuthzCode": {},
         "org.gluu.inbound.oauth2.AuthzCodeWithUserInfo": {},
-        "code": {}
+        "code": {},
+        "org.gluu.inbound.openid": {}
     },
     "name": "agama-openid"
 }
