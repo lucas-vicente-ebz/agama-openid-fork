@@ -7,19 +7,23 @@ obj = { providers: conf }
 emailObj = { email: "", errorMessage: "" }
 //  ======== [ALTERAÇÃO]: coletar e-mail e resolver provider via Java ========
 dataEmail = RRF "form.ftlh" emailObj
-email = dataEmail
+email = (dataEmail and dataEmail.email) ? dataEmail.email.trim() : ""
 //  resolve o providerId chamando o utilitário Java
-providerId = Call org.ebz.tec.br.domain.emailHandler#getProvider email
-When providerId is "" or providerId is null
+providerId = Call org.ebz.tec.br.domain.EmailDomain#providerFor email
+When providerId is ""
      //  feedback simples de erro; se preferir, re-renderize o form com mensagem
-     Finish it_hadlw
+     Finish providerId
 //  Carrega a configuração do provider (mantendo a sintaxe original do sample)
 opSettings = conf.$providerId
 temp = {}
 //  (opcional) enviar login_hint ao IdP para pré-preencher o usuário
-When opSettings.oauth.extraParams is not ""
+When opSettings.oauth.extraParams is ""
      opSettings.oauth.extraParams = {}
      opSettings.oauth.extraParams.login_hint = email
+//  Check if dynamic client registration is desired
+When opSettings.dcr is not "" and opSettings.dcr.enabled is true
+     //  Perform client registration and grab config data
+     temp = Call org.gluu.inbound.oauth2.DCRUtil#registerClient opSettings.host opSettings.dcr.useCachedClient opSettings.oauth.redirectUri opSettings.oauth.scopes
 //  Fill missing data in opSettings, if any, like client creds
 opSettings.oauth = Call org.gluu.inbound.oauth2.OAuthParams#update opSettings.oauth  temp opSettings.acrValues
 //  Launch utility flow
