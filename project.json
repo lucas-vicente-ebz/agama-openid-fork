@@ -56,7 +56,8 @@
                     }
                 }
             }
-        }
+        },
+        "ebz.tec.br.domain": {}
     },
     "name": "agama-openid"
 }
