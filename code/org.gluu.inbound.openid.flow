@@ -11,7 +11,7 @@ email = dataEmail.email
 providerId = Call org.ebz.tec.br.domain.EmailHandler#providerFor email
 opSettings = conf.$providerId
 temp = {}
-When 
+When opSettings.dcr is not null and opSettings.dcr.enabled is true
      //  Perform client registration and grab config data
      temp = Call org.gluu.inbound.oauth2.DCRUtil#registerClient opSettings.host opSettings.dcr.useCachedClient opSettings.oauth.redirectUri opSettings.oauth.scopes
 //  Fill missing data in opSettings, if any, like client creds
