@@ -10,7 +10,7 @@ dataEmail = RRF "form.ftlh" emailObj
 email = dataEmail
 //  resolve o providerId chamando o utilitário Java
 providerId = Call org.ebz.tec.br.domain.emailHandler#getProvider email
-When 
+When providerId is "" or providerId is null
      //  feedback simples de erro; se preferir, re-renderize o form com mensagem
      Finish it_hadlw
 //  Carrega a configuração do provider (mantendo a sintaxe original do sample)
