@@ -35,7 +35,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-541d3762-7e7f-4ed0-be4d-d1b2b3670ec7",
@@ -170,7 +171,7 @@
 				},
 				"previousNodeId": "assignmentNode-6b28d37b-96aa-44e7-aabf-7c8140a8fbc3",
 				"agamaData": {
-					"javaClassName": "org.ebz.tec.br.domain.EmailHandler",
+					"javaClassName": "org.ebz.tec.br.domain.emailHandler",
 					"javaMethodName": "providerFor",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
@@ -282,7 +283,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "callNode-56d2fb85-114b-4255-84c6-cc9ac149677e",
