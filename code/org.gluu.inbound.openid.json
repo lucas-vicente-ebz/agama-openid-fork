@@ -233,7 +233,8 @@
 			"measured": {
 				"width": 110,
 				"height": 60
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "finishNode-050de392-4876-495a-9f8f-4f8f5c87690f",
@@ -259,8 +260,8 @@
 					"hasComment": true,
 					"comment": " feedback simples de erro; se preferir, re-renderize o form com mensagem",
 					"flowfilename": "",
-					"returnVariable": "{",
-					"finishMode": "withVariable",
+					"returnVariable": "email não encontrado ou domínio sem IdP configurado",
+					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"previousNodeId": "whenNode-f6882f9d-4bdd-4671-a90c-2d673da97e19"
 				}
@@ -268,7 +269,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-74d37296-6f78-405a-b219-1f0ff7e17028",
@@ -354,7 +356,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-e8b5f492-c3fb-4196-9789-e163f5b62577",
