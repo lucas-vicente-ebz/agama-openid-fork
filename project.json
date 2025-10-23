@@ -56,7 +56,8 @@
                     }
                 }
             }
-        }
+        },
+        "org.gluu.inbound.openid.old": {}
     },
     "name": "agama-openid"
 }
