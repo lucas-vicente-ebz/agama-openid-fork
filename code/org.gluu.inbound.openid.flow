@@ -26,3 +26,5 @@ When outcome.success is true
      //  Finish returning the uid of the given user
      Finish uid
 Finish outcome
+// mostrar provider id
+Log "@warn  o provider ID é : % " providerId
