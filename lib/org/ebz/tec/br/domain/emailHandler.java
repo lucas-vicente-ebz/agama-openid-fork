@@ -1,4 +1,3 @@
-
 package org.ebz.tec.br.domain;
 
 import java.util.HashMap;
@@ -8,17 +7,6 @@ public final class EmailHandler {
 
     private EmailHandler() {}
 
-    // ===== Mapa domínio -> providerId =====
-    private static final Map<String, String> DOMAIN_TO_PROVIDER = new HashMap<>();
-    static {
-        DOMAIN_TO_PROVIDER.put("ebz.tec.br", "LemonLDAP");
-        DOMAIN_TO_PROVIDER.put("wren.com",   "WrenAM");
-        DOMAIN_TO_PROVIDER.put("ping.com",   "OpenAM");
-        DOMAIN_TO_PROVIDER.put("keycloak.com", "KeycloakLab");
-        // adicione mais aqui conforme necessidade
-    }
-
-    // Fallback opcional
     private static final String DEFAULT_PROVIDER = "LemonLDAP";
 
     /** Extração mínima de domínio: exige existir '@' e '.' em algum lugar. */
@@ -35,16 +23,13 @@ public final class EmailHandler {
         return domain.isEmpty() ? null : domain;
     }
 
-    /** Retorna o providerId mapeado para o e-mail; usa fallback se não achar. */
     public static String providerFor(String email) {
         String domain = extractDomainSimple(email);
-        if (domain == null) return null; // ou retorne DEFAULT_PROVIDER, se preferir
-
-        String provider = DOMAIN_TO_PROVIDER.get(domain);
-        if (provider != null && !provider.isBlank()) {
-            return provider;
-        }
-        // fallback (remova se não quiser)
-        return DEFAULT_PROVIDER;
+        if (domain == null) return null;
+        if (domain.equals("ebz.tec.br")) return DEFAULT_PROVIDER; 
+        if (domain.equals("openam.tec.br")) return "OpenAM"; 
+        if (domain.equals("wrenam.tec.br")) return "WrenAM"; 
+        if (domain.equals("keycloak.tec.br")) return "KeycloakLab"; 
+        return null
     }
 }
