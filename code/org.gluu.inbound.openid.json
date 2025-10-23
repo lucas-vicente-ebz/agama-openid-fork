@@ -616,7 +616,7 @@
 				},
 				"previousNodeId": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
 				"agamaData": {
-					"logMessage": "\" o provider ID é : % \" providerId",
+					"logMessage": "\" o provider ID é : % % \" providerId dataEmail.email",
 					"logLevel": "warn",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
