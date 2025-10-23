@@ -118,7 +118,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -140,7 +140,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": false,
-							"assignmentExpression": "(dataEmail and dataEmail.email) ? dataEmail.email.trim() : \"\"",
+							"assignmentExpression": "dataEmail",
 							"assignedVariableName": "email"
 						}
 					],
@@ -198,7 +198,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
