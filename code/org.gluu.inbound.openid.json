@@ -208,7 +208,7 @@
 					"x": 1280,
 					"y": 40
 				},
-				"previousNodeId": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
+				"previousNodeId": "logNode-758fe66a-f107-4087-b364-9e32ab5b07d9",
 				"agamaData": {
 					"assignments": [
 						{
@@ -604,8 +604,8 @@
 			"id": "logNode-758fe66a-f107-4087-b364-9e32ab5b07d9",
 			"type": "logNode",
 			"position": {
-				"x": 1151,
-				"y": 910
+				"x": 1017,
+				"y": 607
 			},
 			"data": {
 				"id": "logNode-758fe66a-f107-4087-b364-9e32ab5b07d9",
@@ -698,25 +698,6 @@
 			"type": "default",
 			"source": "assignmentNode-b861f827-3df6-4f0c-906b-8225e0aea716",
 			"target": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": ""
-		},
-		{
-			"id": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9-assignmentNode-91d591b7-70bd-44ba-b122-082847f0eae4",
-			"type": "default",
-			"source": "callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9",
-			"target": "assignmentNode-91d591b7-70bd-44ba-b122-082847f0eae4",
 			"labelBgPadding": [
 				8,
 				4
@@ -920,11 +901,29 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_callNode-698e794f-dd4d-46f5-a86a-b2bb1f3e4dc9"
+		},
+		{
+			"source": "logNode-758fe66a-f107-4087-b364-9e32ab5b07d9",
+			"sourceHandle": "source_logNode-758fe66a-f107-4087-b364-9e32ab5b07d9",
+			"target": "assignmentNode-91d591b7-70bd-44ba-b122-082847f0eae4",
+			"targetHandle": "target_assignmentNode-91d591b7-70bd-44ba-b122-082847f0eae4",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__logNode-758fe66a-f107-4087-b364-9e32ab5b07d9source_logNode-758fe66a-f107-4087-b364-9e32ab5b07d9-assignmentNode-91d591b7-70bd-44ba-b122-082847f0eae4target_assignmentNode-91d591b7-70bd-44ba-b122-082847f0eae4"
 		}
 	],
 	"viewport": {
-		"x": -205,
-		"y": 175,
+		"x": 18,
+		"y": 41.25,
 		"zoom": 1
 	}
 }
