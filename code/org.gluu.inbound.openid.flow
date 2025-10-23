@@ -12,8 +12,7 @@ email = dataEmail
 providerId = Call org.ebz.tec.br.domain.emailHandler#getProvider email
 When 
      //  feedback simples de erro; se preferir, re-renderize o form com mensagem
-     it_bhvvk = {success:false, error: "email não encontrado ou domínio sem IdP configurado"}
-     Finish it_bhvvk
+     Finish it_hadlw
 //  Carrega a configuração do provider (mantendo a sintaxe original do sample)
 opSettings = conf.$providerId
 temp = {}
