@@ -118,7 +118,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -335,8 +335,9 @@
 					"conditionInputField": "",
 					"conditions": [
 						{
-							"variable": "!opSettings.oauth.extraParams",
-							"operator": "is",
+							"variable": "opSettings.oauth.extraParams",
+							"operator": "is not",
+							"dataValue": "\"\"",
 							"combinator": "none"
 						}
 					],
@@ -352,7 +353,8 @@
 			"measured": {
 				"width": 110,
 				"height": 60
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-e8b5f492-c3fb-4196-9789-e163f5b62577",
@@ -1093,8 +1095,8 @@
 		}
 	],
 	"viewport": {
-		"x": 245,
-		"y": 307,
+		"x": -555,
+		"y": 397,
 		"zoom": 1
 	}
 }
